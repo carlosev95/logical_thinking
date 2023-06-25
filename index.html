@@ -15,8 +15,7 @@
         <div id="post">
             <a href="https://static.platzi.com/media/user_upload/Dominos-94671981-69cc-480c-902a-5d580ed984bc.jpg"></a>
             <img src="https://static.platzi.com/media/user_upload/Dominos-94671981-69cc-480c-902a-5d580ed984bc.jpg" width="100%">
-            <br>
-            <div class="domino">
+            <div id="ocultar-domino" class="domino">
                 <div class="top">
                     <input type="number" min="0" max="6" value="0">
                 </div>
@@ -30,9 +29,8 @@
         </div>
           
         <div id="win" style="display: none;">
-            <h2>Felicitaciones</h2>
-            <p>Has completado la tarea con éxito.</p>
-            <p>La solución correcta es 4 / 6</p>
+            <h2>¡Felicitaciones! 🥳</h2>
+            <p>Has completado la tarea con éxito. La solución correcta es: <b>4 / 6</b></p>
             <a href="https://static.platzi.com/media/user_upload/Dominos1-b080e61f-87e0-4f15-a873-f955919e625a.jpg"></a>
             <img src="https://static.platzi.com/media/user_upload/Dominos1-b080e61f-87e0-4f15-a873-f955919e625a.jpg" alt="">
             <p>Esto por las siguientes razones:</p>    
@@ -57,7 +55,7 @@
         </div>
 
         <div id="lose" style="display: none;">
-            <h2>Lo siento, has perdido</h2>
+            <h2>Lo siento, has perdido 😥</h2>
             <p>No te preocupes si elegiste una opción incorrecta. Recuerda que el pensamiento lógico y la programación son una habilidad que se adquiere con la práctica.</p>
             <button id="reboot" onclick="reloadGame()">Reiniciar</button>
         </div>
