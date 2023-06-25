@@ -36,12 +36,11 @@ body {
     font-size: 20px;
 }
 
-#post {
+#post, #win, #lose {
     background: white;
     padding: 1em;
     display: grid;
-    place-items: center;
-  
+    place-items: center;  
 }
 
 #footer {
@@ -63,7 +62,7 @@ body {
 }
 
 .top,
-.bottom, .submit {
+.bottom {
     width: 100%;
     height: 50%;
     display: flex;

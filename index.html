@@ -8,7 +8,7 @@
     <title>Secuencia de Domino</title>
 </head>
 <body>
-    <div id="container">
+    <section id="container">
         <div id="cabecera">
             <span id="tagline">Desafío de Pensamiento Lógico</span>
         </div>
@@ -24,15 +24,47 @@
                     <input type="number" min="0" max="6" value="0">
                 </div>
                 <div class="submit">
-                    <button onclick="checkDominos()">Enviar</button>
+                    <button id="btn" onclick="checkDominos()">Enviar</button>
                 </div>
             </div>
         </div>
           
-        <div id="footer">
-            Proyecto para curso de Platzi
+        <div id="win">
+            <h2>Felicitaciones</h2>
+            <p>Has completado la tarea con éxito.</p>
+            <p>La solución correcta es 4 / 6</p>
+            <a href="https://static.platzi.com/media/user_upload/Dominos1-b080e61f-87e0-4f15-a873-f955919e625a.jpg"></a>
+            <img src="https://static.platzi.com/media/user_upload/Dominos1-b080e61f-87e0-4f15-a873-f955919e625a.jpg" alt="">
+            <p>Esto por las siguientes razones:</p>    
+            <ul class="list">
+                <li>
+                    Tantos los lados superiores como inferiores, aumentan de manera alternativa en +1 y +2 unidades.
+                </li>
+                <li>
+                    Analicemos cada vertiente:
+                    <ul class="sublist">
+                        <li>
+                            Vertiente superior: La secuencia anterior obtuvo dos (+2) unidades de aumento, por lo que la secuencia que continua es aumentar una unidad (+1). Por esta razón el valor es cuatro (4).
+                        </li>
+                        <li>
+                            Vertiente inferior: La secuencia anterior obtuvo un (+1) unidad de aumento, por tanto el aumento correspondiente son dos unidades (+2). Por esta razón el valor es seis (6).
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="btn">Reiniciar</button>
         </div>
-    </div>
+
+        <div id="lose">
+            <h2>Lo siento, has perdido</h2>
+            <p>No te preocupes si elegiste una opción incorrecta. Recuerda que el pensamiento lógico y la programación son una habilidad que se adquiere con la práctica.</p>
+            <button id="btn">Reiniciar</button>
+        </div>
+
+        <div id="footer">
+            Proyecto creado para evaluación de curso de Platzi
+        </div>
+    </section>
     <script src="js/domino.js"></script>
 </body>
 </html>
