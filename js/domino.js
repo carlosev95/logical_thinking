@@ -1,11 +1,17 @@
-function checkDominos() {
-    const topNumber = parseInt(document.querySelector('.top input').value);
-    const bottomNumber = parseInt(document.querySelector('.bottom input').value);
-  
+const sectionWin = document.getElementById('win')
+const sectionLose = document.getElementById('lose')
+const topNumber = parseInt(document.querySelector('.top input').value);
+const bottomNumber = parseInt(document.querySelector('.bottom input').value);
+//const btnReload = document.getElementById('reboot')
+
+function checkDominos() {    
     if (topNumber === 4 && bottomNumber === 6) {
-      alert('¡Felicidades! Has elegido la ficha de dominó "4/6".');
+        sectionWin.style.display = 'block'
     } else {
-        alert('Respuesta incorrecta')
+        sectionLose.style.display = 'block'
     }
-  }
-  
+}
+
+function reloadGame() {
+    location.reload()
+}

@@ -29,7 +29,7 @@
             </div>
         </div>
           
-        <div id="win">
+        <div id="win" style="display: none;">
             <h2>Felicitaciones</h2>
             <p>Has completado la tarea con éxito.</p>
             <p>La solución correcta es 4 / 6</p>
@@ -52,13 +52,14 @@
                     </ul>
                 </li>
             </ul>
-            <button id="btn">Reiniciar</button>
+            <button id="reboot" onclick="reloadGame()">Reiniciar</button>
+
         </div>
 
-        <div id="lose">
+        <div id="lose" style="display: none;">
             <h2>Lo siento, has perdido</h2>
             <p>No te preocupes si elegiste una opción incorrecta. Recuerda que el pensamiento lógico y la programación son una habilidad que se adquiere con la práctica.</p>
-            <button id="btn">Reiniciar</button>
+            <button id="reboot" onclick="reloadGame()">Reiniciar</button>
         </div>
 
         <div id="footer">
