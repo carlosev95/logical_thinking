@@ -117,7 +117,7 @@ button {
     border: none;
   }
 
-@media (max-width: 700px) {
+@media (max-width: 560px) {
     #container {
         display: flex;
         align-items: center;
