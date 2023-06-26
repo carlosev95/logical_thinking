@@ -62,7 +62,7 @@ button {
 
 #cabecera, #tagline {
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-align: center;
 }
 
@@ -117,15 +117,43 @@ button {
     border: none;
   }
 
-@media (max-width: 560px) {
+@media (max-width: 880px) {
     #container {
-        display: flex;
-        align-items: center;
         flex-direction: column;
+    }
+    #cabecera {
+        font-size: 1.3em;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 780px) {
+    #container {
+        flex-direction: column;
+    }
+    #cabecera {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 680px) {
+    #container {
+        flex-direction: column;
+    }
+    #cabecera {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 580px) {
+    #container {
+        flex-direction: column;
+    }
+    #cabecera {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 380px) {
     #container{
         display: flex;
         align-items: center;
