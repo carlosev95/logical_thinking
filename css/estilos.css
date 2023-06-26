@@ -61,9 +61,9 @@ button {
 }
 
 #cabecera, #tagline {
-    padding: 0 0 0 1em;
     font-weight: normal;
     font-size: 1.5em;
+    text-align: center;
 }
 
 #container h1 {
@@ -79,13 +79,12 @@ button {
 }
 
 #img-domino {
-    margin: 0 15px 0 15px
+    max-width: 100%;
+    height: auto;
 }
 
 .list {
     text-align: left;
-    margin-left: 5em;
-    margin-right: 5em;
 }
 
 
@@ -117,3 +116,19 @@ button {
     margin: 0;
     border: none;
   }
+
+@media (max-width: 700px) {
+    #container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px) {
+    #container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
