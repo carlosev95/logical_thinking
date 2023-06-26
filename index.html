@@ -13,27 +13,35 @@
             <span id="tagline">Desafío de Pensamiento Lógico</span>
         </div>
         <div id="post">
-            <a href="https://static.platzi.com/media/user_upload/Dominos-94671981-69cc-480c-902a-5d580ed984bc.jpg"></a>
-            <img src="https://static.platzi.com/media/user_upload/Dominos-94671981-69cc-480c-902a-5d580ed984bc.jpg" width="100%">
-            <div id="ocultar-domino" class="domino">
-                <div class="top">
-                    <input type="number" min="0" max="6" value="0">
-                </div>
-                <div class="bottom">
-                    <input type="number" min="0" max="6" value="0">
-                </div>
-                <div class="submit">
-                    <button id="btn" onclick="checkDominos()">Enviar</button>
-                </div>
+            <h1>Encuentra la secuencia siguiente en las piezas presentadas:</h1>
+            <div id="img-domino">
+                <img src="img/quiz_domino.png" width="100%">
             </div>
+            <section id="ocultar-domino">
+                <div class="domino" id="ocultar-domino" >
+                    <div class="top">
+                        <input type="number" min="1" max="6" value="1">
+                    </div>
+                    <hr class="line">
+                    <div class="bottom">
+                        <input type="number" min="1" max="6" value="1">
+                    </div>
+                </div>
+                <br>
+                <div id="btn-domino">
+                    <button onclick="checkDominos()">Enviar</button>
+                </div>
+            </section>
+
         </div>
           
         <div id="win" style="display: none;">
             <h2>¡Felicitaciones! 🥳</h2>
             <p>Has completado la tarea con éxito. La solución correcta es: <b>4 / 6</b></p>
-            <a href="https://static.platzi.com/media/user_upload/Dominos1-b080e61f-87e0-4f15-a873-f955919e625a.jpg"></a>
-            <img src="https://static.platzi.com/media/user_upload/Dominos1-b080e61f-87e0-4f15-a873-f955919e625a.jpg" alt="">
-            <p>Esto por las siguientes razones:</p>    
+            <div id="img-domino">
+                <img src="img/solucion_domino.png" width="100%">
+            </div>
+            <p><b>Esto es por las siguientes razones:</b></p>    
             <ul class="list">
                 <li>
                     Tantos los lados superiores como inferiores, aumentan de manera alternativa en +1 y +2 unidades.
@@ -56,12 +64,13 @@
 
         <div id="lose" style="display: none;">
             <h2>Lo siento, has perdido 😥</h2>
-            <p>No te preocupes si elegiste una opción incorrecta. Recuerda que el pensamiento lógico y la programación son una habilidad que se adquiere con la práctica.</p>
+            <p>No te preocupes si elegiste una opción incorrecta.</p>
+            <p>Recuerda que el pensamiento lógico es una habilidad que se adquiere con la práctica.</p>
             <button id="reboot" onclick="reloadGame()">Reiniciar</button>
         </div>
 
         <div id="footer">
-            Proyecto creado para evaluación de curso de Platzi
+            Proyecto creado en el Curso de Desarrollo Web de Platzi
         </div>
     </section>
     <script src="js/domino.js"></script>
