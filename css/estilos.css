@@ -44,7 +44,7 @@ button {
 }
 
 #container {
-    width: 40%;
+    width: 50%;
     padding: 0;
     text-align: left;
     border: 1px solid #ddd;
@@ -60,7 +60,7 @@ button {
     text-align: center;
 }
 
-#cabecera, #tagline {
+#cabecera #tagline {
     font-weight: normal;
     font-size: 1.4em;
     text-align: center;
@@ -137,62 +137,91 @@ button {
         flex-direction: column;
         width: 50%;
     }
-    #cabecera {
-        font-size: 1.3em;
-    }
-    #domino-container img {
-        display: inline-block;
-        width: auto;
-        height: 150px;
-    }
 }
 
 @media (max-width: 1200px) {
-    #container {
-        flex-direction: column;
-        width: 60%;
-    }
-    #cabecera {
-        font-size: 1.2em;
+    #domino-container img {
+        height: 140px;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1029px) {
     #container {
-        flex-direction: column;
         width: 70%;
-    }
-    #cabecera {
-        font-size: 1.1em;
     }
 }
 
 @media (max-width: 768px) {
     #container {
-        flex-direction: column;
-        width: 80%;
-    }
-    #cabecera {
-        font-size: 1em;
+        width: 90%;
     }
 }
+
+@media (max-width: 565px) {
+    #container {
+        width: 100%;
+    }
+    #domino-container img {
+        height: 130px;
+    }
+    input {
+        width: 63px;
+        height: 45px;
+        font-size: 14px;
+        text-align: center;
+        border: 0.9px solid #ccc;
+        border-radius: 4.5px;
+        margin-bottom: 9px;
+    }
+    .domino {
+        width: 99px;
+        height: 180px;
+    }
+}
+
 
 @media (max-width: 480px) {
-    #container {
-        flex-direction: column;
-        width: 100%;
+    #cabecera #tagline {
+        font-size: 1.3em;
     }
-    #cabecera {
-        font-size: 1em;
+    #domino-container img {
+        height: 120px;
     }
 }
 
-@media (max-width: 320px) {
-    #container {
-        flex-direction: column;
-        width: 100%;
+@media (max-width: 421px) {
+    #domino-container img {
+        height: 110px;
     }
-    #cabecera {
-        font-size: 1em;
+}
+
+@media (max-width: 400px) {
+    #domino-container img {
+        height: 100px;
+    }
+}
+
+@media (max-width: 360px) {
+    #domino-container img {
+        height: 90px;
+    }
+    input {
+        width: 56px;
+        height: 40px;
+        font-size: 13px;
+        text-align: center;
+        border: 0.8px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    .domino {
+        width: 88px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 327px) {
+    #domino-container img {
+        height: 80px;
     }
 }
