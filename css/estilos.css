@@ -6,7 +6,6 @@ Paleta de Colores:
 #DEEEEA
 */
 
-
 body {
     background: #231E23;
     color: #231E23;
@@ -102,7 +101,6 @@ button {
     text-align: left;
 }
 
-
 .domino {
     width: 110px;
     height: 200px;
@@ -115,8 +113,7 @@ button {
     background-color: transparent;
 }
 
-.top,
-.bottom {
+.top, .bottom {
     width: 100%;
     height: 50%;
     display: flex;
@@ -130,7 +127,7 @@ button {
     background-color: black;
     margin: 0;
     border: none;
-  }
+}
 
 @media (max-width: 1440px) {
     #container {
