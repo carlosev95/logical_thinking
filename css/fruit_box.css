@@ -23,13 +23,14 @@ h2 {
 }
 
 button {
-    width: 5em;
-    height: 2.5em;
+    width: 6em;
+    height: 3em;
     border-radius: 0.6em;
     background: #231E23;
     border: 0.1em solid #F6F5F5;
     color: #f5f5f5;
     font-family: 'Poppins', sans-serif;
+    font-size: 1em;
 }
 
 #container {
@@ -132,6 +133,11 @@ button {
     justify-content: center;
 }
 
+.list {
+    text-align: left;
+    padding: 0 6em;
+}
+
 @media (max-width: 1440px) {
     #container {
         flex-direction: column;
@@ -154,16 +160,25 @@ button {
         text-align: center;
         flex-direction: column;
     }
+    .list {
+        padding: 0 5em;
+    }
 }
 
 @media (max-width: 480px) {
     #fruit_box_img img {
         height: 15em;
     }
+    .list {
+        padding: 0 3em;
+    }
 }
 
 @media (max-width: 360px) {
     #fruit_box_img img {
         height: 12em;
+    }
+    .list {
+        padding: 0 1em;
     }
 }
