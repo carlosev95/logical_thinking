@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/domino.css">
+    <link rel="icon" href="../img/domino.ico">
+    <title>Secuencia de Dominó</title>
+</head>
+<body>
+    <section id="container">
+        <div id="cabecera">
+            <span id="tagline">Desafío de Pensamiento Lógico</span>
+        </div>
+        <div id="post">
+            <h1>Encuentra la secuencia siguiente en las piezas presentadas:</h1>
+            <div id="domino-container">
+                <img src="../img/4_5.png" alt="4/5">
+                <img src="../img/5_0.png" alt="5/0">
+                <img src="../img/0_1.png" alt="0/1">
+                <img src="../img/1_3.png" alt="1/3">
+                <img src="../img/3_4.png" alt="3/4">
+                <img src="../img/vacio.png" alt="?/?">
+            </div>
+            <section id="ocultar-domino">
+                <div class="domino" id="ocultar-domino" >
+                    <div class="top">
+                        <input type="number" min="1" max="6" value="1">
+                    </div>
+                    <hr class="line">
+                    <div class="bottom">
+                        <input type="number" min="1" max="6" value="1">
+                    </div>
+                </div>
+                <br>
+                <div id="btn-domino">
+                    <button onclick="checkDominos()">Enviar</button>
+                </div>
+            </section>
+
+        </div>
+          
+        <div id="win" style="display: none;">
+            <h2>¡Felicitaciones! 🥳</h2>
+            <p>Has completado la tarea con éxito. La solución correcta es: <b>4 / 6</b></p>
+            <div id="domino-container">
+                <img src="../img/4_5.png" alt="4/5">
+                <img src="../img/5_0.png" alt="5/0">
+                <img src="../img/0_1.png" alt="0/1">
+                <img src="../img/1_3.png" alt="1/3">
+                <img src="../img/3_4.png" alt="3/4">
+                <img src="../img/4_6.png" alt="4/6">
+            </div>
+            <p><b>Esto es por las siguientes razones:</b></p>    
+            <ul class="list">
+                <li>
+                    Tantos los lados superiores como inferiores, aumentan de manera alternativa en +1 y +2 unidades.
+                </li>
+                <li>
+                    Analicemos cada vertiente:
+                    <ul class="sublist">
+                        <li>
+                            Vertiente superior: La secuencia anterior obtuvo dos (+2) unidades de aumento, por lo que la secuencia que continua es aumentar una unidad (+1). Por esta razón el valor es cuatro (4).
+                        </li>
+                        <li>
+                            Vertiente inferior: La secuencia anterior obtuvo un (+1) unidad de aumento, por tanto el aumento correspondiente son dos unidades (+2). Por esta razón el valor es seis (6).
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="reboot" onclick="reloadGame()">Reiniciar</button>
+
+        </div>
+
+        <div id="lose" style="display: none;">
+            <h2>Lo siento, has perdido 😥</h2>
+            <p>No te preocupes si elegiste una opción incorrecta.</p>
+            <p>Recuerda que el pensamiento lógico es una habilidad que se adquiere con la práctica.</p>
+            <button id="reboot" onclick="reloadGame()">Reiniciar</button>
+        </div>
+
+        <div id="footer">
+            Proyecto creado por Carlos E (2023)
+            <a href="https://github.com/mccromo/logical_thinking" target="_blank"><img id="img-footer" src="../img/github.png"></a>
+            <a href="https://www.linkedin.com/in/carlosev23/" target="_blank"><img id="img-footer" src="../img/linkedin.png"></a>
+        </div>
+    </section>
+    <script src="../js/domino.js"></script>
+</body>
+</html>
