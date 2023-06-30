@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/fruit_box.css">
+    <link rel="icon" href="../img/fruit.ico">
+    <title>Caja de Frutas</title>
+</head>
+<body>
+    <section id="container">
+        <div id="cabecera">
+            <span id="tagline">Desafío de Pensamiento Lógico</span>
+        </div>
+        <div id="post">
+            <h1>Tengo 3 cajas, cada una contiene un tipo de fruta diferente (peras, manzanas y naranjas). El problema es que todas las cajas tienen las etiquetas de las frutas incorrectas. ¿Cuántas cajas necesito abrir para saber colocar todas las etiquetas correctamente?</h1>
+            <div id="fruit_box_img">
+                <img src="../img/frutas.png" alt="frutas">
+            </div>
+            <section id="ocultar-domino">
+                <div class="box">
+                    <div class="select-container">
+                      <select id="numberSelect">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                    <br>
+                    <div class="button-container">
+                      <button id="submitBtn">Enviar</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+          
+        <div id="win" style="display: none;">
+            <h2>¡Felicitaciones! 🥳</h2>
+            <p>¡La repuesta correcta es que solo debemos abrir UNA caja!<b>4 / 6</b></p>
+            <div id="fruit_box_img">
+                <img src="../img/frutas.png" alt="frutas">
+            </div>
+            <p><b>Veamos los factores importantes para esta decisión:</b></p>    
+            <ul class="list">
+                <li>Existen tres cajas con etiquetas, pero ninguna etiqueta coincide con el contenido de la caja.</li>
+                <li>Imaginemos que abrimos la caja que tiene la etiqueta de Peras y dentro de la caja vemos Manzanas.</li>
+                <li>Luego de ver el contenido de esta primera caja (en este caso, Manzanas), voy a la caja que tenga la etiqueta de esa fruta (Manzanas) y se la quito para colocar la etiqueta anterior (siguiendo el ejemplo: Peras).</li>
+                <li>Teniendo esto en cuenta, solo nos quedan dos cajas (una que tenia la etiqueta de manzanas y la que permanece con las etiquetas de naranja).</li>
+                <li>Finalmente solo tenemos que intercambiar las etiquetas de las cajas restantes… ¡y listo!</li>
+            </ul>
+            <button id="reboot" onclick="reloadGame()">Reiniciar</button>
+
+        </div>
+
+        <div id="lose" style="display: none;">
+            <h2>Lo siento, has perdido 😥</h2>
+            <p>No te preocupes si elegiste una opción incorrecta.</p>
+            <p>Recuerda que el pensamiento lógico es una habilidad que se adquiere con la práctica.</p>
+            <button id="reboot" onclick="reloadGame()">Reiniciar</button>
+        </div>
+
+        <div id="footer">
+            Proyecto creado por Carlos E (2023)
+            <a href="https://github.com/mccromo/logical_thinking" target="_blank"><img id="img-footer" src="../img/github.png"></a>
+            <a href="https://www.linkedin.com/in/carlosev23/" target="_blank"><img id="img-footer" src="../img/linkedin.png"></a>
+        </div>
+    </section>
+    <script src="../js/fruit.js"></script>
+</body>
+</html>
