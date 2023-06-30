@@ -1,10 +1,20 @@
-var submitBtn = document.getElementById("submitBtn");
-var numberSelect = document.getElementById("numberSelect");
+const sectionWin = document.getElementById('win')
+const sectionLose = document.getElementById('lose')
+const sectionPost = document.getElementById('post')
 
-submitBtn.addEventListener("click", function() {
-  var selectedNumber = numberSelect.value;
-  if (selectedNumber === "5") {
-    alert("¡Felicidades!");
-  }
-});
-  
+let btnSubmit = document.getElementById("btn-enviar")
+let numberSelect = document.getElementById("number-select")
+
+btnSubmit.addEventListener("click", function() {
+    if (numberSelect.value === "1") {
+    sectionPost.style.display = 'none'
+    sectionWin.style.display = 'block'
+    } else {
+    sectionPost.style.display = 'none'
+    sectionLose.style.display = 'block'
+    }
+})
+
+function reloadGame() {
+    location.reload()
+}

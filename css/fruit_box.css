@@ -22,16 +22,6 @@ h2 {
     margin-top: 0px;
 }
 
-input {
-    width: 70px;
-    height: 50px;
-    font-size: 16px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
 button {
     width: 80px;
     height: 40px;
@@ -69,7 +59,9 @@ button {
     font-size: 20px;
 }
 
-#post, #win, #lose {
+#post,
+#win,
+#lose {
     background: white;
     padding: 0.8em;
     display: grid;
@@ -88,7 +80,7 @@ button {
     color: white;
     text-align: center;
     padding: 0.5em;
- }
+}
 
 #img-footer {
     width: 1.5em;
@@ -100,14 +92,19 @@ button {
 .box {
     width: 200px;
     height: 200px;
-    border: 1px solid #ccc;
+    border: 1px solid #231E23;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
+}
+
 .box select {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
     padding: 10px;
     font-size: 1.3em;
     appearance: none;
@@ -116,48 +113,25 @@ button {
     color: #333;
     cursor: pointer;
 }
-  
+
 .box select:focus {
     outline: none;
 }
-  
+
 .box select option {
     padding: 10px;
     background-color: #f2f2f2;
     color: #333;
 }
-  
+
+.button-container {
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
 
 .list {
     text-align: left;
-}
-
-.domino {
-    width: 110px;
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    background-color: transparent;
-}
-
-.top, .bottom {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.line {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    margin: 0;
-    border: none;
 }
 
 @media (max-width: 1440px) {
@@ -189,9 +163,11 @@ button {
     #container {
         width: 100%;
     }
+
     #fruit_box_img img {
         height: 130px;
     }
+
     input {
         width: 63px;
         height: 45px;
@@ -201,6 +177,7 @@ button {
         border-radius: 4.5px;
         margin-bottom: 9px;
     }
+
     .domino {
         width: 99px;
         height: 180px;
@@ -212,6 +189,7 @@ button {
     #cabecera #tagline {
         font-size: 1.3em;
     }
+
     #fruit_box_img img {
         height: 120px;
     }
@@ -233,6 +211,7 @@ button {
     #fruit_box_img img {
         height: 90px;
     }
+
     input {
         width: 56px;
         height: 40px;
@@ -242,6 +221,7 @@ button {
         border-radius: 4px;
         margin-bottom: 8px;
     }
+
     .domino {
         width: 88px;
         height: 160px;
