@@ -52,8 +52,9 @@ button {
 }
 
 #container h1 {
-    font-size: 20px;
-    padding: 0 2em;
+    font-size: 1.2em;
+    padding: 0 3em;
+    margin-bottom: 1em;
 }
 
 #cabecera {
@@ -150,6 +151,9 @@ button {
     #container {
         width: 100%;
     }
+    #container h1 {
+        padding: 0 2em;
+    }
     #post {
         display: flex;
         text-align: center;
@@ -161,8 +165,15 @@ button {
 }
 
 @media (max-width: 480px) {
-    #domino-container img {
-        height: 7em;
+    button {
+        width: 5.5em;
+        height: 2.5em;
+        border-radius: 0.6em;
+        font-size: 0.9em;
+    }
+    h3 {
+        margin:0.5em 0 0.5em 0;
+        font-size: 1em;
     }
     input {
         width: 63px;
@@ -173,9 +184,19 @@ button {
         border-radius: 4.5px;
         margin-bottom: 9px;
     }
+    #domino-container img {
+        height: 7em;
+    }
+    #container h1 {
+        font-size: 1.1em;
+        padding: 0;
+    }
     .domino {
         width: 99px;
         height: 180px;
+    }
+    .list {
+        padding: 0 1em;
     }
 }
 
