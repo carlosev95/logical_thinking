@@ -23,19 +23,28 @@
                 <img src="../img/vacio.png" alt="?/?">
             </div>
             <section id="ocultar-domino">
-                <div class="domino" id="ocultar-domino" >
-                    <div class="top">
-                        <input type="number" min="1" max="6" value="1">
-                    </div>
+                <h3>Selecciona una opción:</h3>
+                <section id="ocultar-domino" class="domino" >
+                    <select id="number-top">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
                     <hr class="line">
-                    <div class="bottom">
-                        <input type="number" min="1" max="6" value="1">
-                    </div>
-                </div>
+                    <select id="number-bottom">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </section>
                 <br>
-                <div id="btn-domino">
-                    <button onclick="checkDominos()">Enviar</button>
-                </div>
+                <button onclick="checkNumber()">Enviar</button>
             </section>
 
         </div>
