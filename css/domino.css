@@ -33,13 +33,14 @@ input {
 }
 
 button {
-    width: 80px;
-    height: 40px;
-    border-radius: 10px;
+    width: 6em;
+    height: 3em;
+    border-radius: 0.6em;
     background: #231E23;
-    border: 2px solid #F6F5F5;
+    border: 0.1em solid #F6F5F5;
     color: #f5f5f5;
     font-family: 'Poppins', sans-serif;
+    font-size: 1em;
 }
 
 #container {
@@ -48,6 +49,11 @@ button {
     text-align: left;
     border: 1px solid #ddd;
     margin: 0 auto;
+}
+
+#container h1 {
+    font-size: 20px;
+    padding: 0 2em;
 }
 
 #cabecera {
@@ -65,10 +71,6 @@ button {
     text-align: center;
 }
 
-#container h1 {
-    font-size: 20px;
-}
-
 #post, #win, #lose {
     background: white;
     padding: 0.8em;
@@ -80,13 +82,7 @@ button {
 #domino-container img {
     display: inline-block;
     width: auto;
-    height: 150px;
-}
-
-#fruit_box_img img {
-    display: inline-block;
-    width: auto;
-    height: 20em;
+    height: 10em;
 }
 
 #footer {
@@ -94,6 +90,7 @@ button {
     color: white;
     text-align: center;
     padding: 0.5em;
+    font-size: 1.2em;
  }
 
 #img-footer {
@@ -105,6 +102,7 @@ button {
 
 .list {
     text-align: left;
+    padding: 0 6em;
 }
 
 .domino {
@@ -138,34 +136,33 @@ button {
 @media (max-width: 1440px) {
     #container {
         flex-direction: column;
-        width: 50%;
-    }
-}
-
-@media (max-width: 1200px) {
-    #domino-container img {
-        height: 140px;
-    }
-}
-
-@media (max-width: 1029px) {
-    #container {
         width: 70%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #container {
         width: 90%;
     }
 }
 
-@media (max-width: 565px) {
+@media (max-width: 768px) {
     #container {
         width: 100%;
     }
+    #post {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .list {
+        padding: 0 5em;
+    }
+}
+
+@media (max-width: 480px) {
     #domino-container img {
-        height: 130px;
+        height: 7em;
     }
     input {
         width: 63px;
@@ -182,31 +179,9 @@ button {
     }
 }
 
-
-@media (max-width: 480px) {
-    #cabecera #tagline {
-        font-size: 1.3em;
-    }
-    #domino-container img {
-        height: 120px;
-    }
-}
-
-@media (max-width: 421px) {
-    #domino-container img {
-        height: 110px;
-    }
-}
-
-@media (max-width: 400px) {
-    #domino-container img {
-        height: 100px;
-    }
-}
-
 @media (max-width: 360px) {
     #domino-container img {
-        height: 90px;
+        height: 6em;
     }
     input {
         width: 56px;
@@ -220,11 +195,5 @@ button {
     .domino {
         width: 88px;
         height: 160px;
-    }
-}
-
-@media (max-width: 327px) {
-    #domino-container img {
-        height: 80px;
     }
 }
