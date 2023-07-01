@@ -24,31 +24,27 @@
             </div>
             <section id="ocultar-domino">
                 <h3>Selecciona una opción:</h3>
-                <div class="domino" id="ocultar-domino" >
-                    <select id="number-select" class="top">
-                        <option value="" disabled selected>?</option>
+                <section id="ocultar-domino" class="domino" >
+                    <select id="number-top">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
-                        <option value="3">4</option>
-                        <option value="3">5</option>
-                        <option value="3">6</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
                     <hr class="line">
-                    <select id="number-select" class="bottom">
-                        <option value="" disabled selected>?</option>
+                    <select id="number-bottom">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
-                        <option value="3">4</option>
-                        <option value="3">5</option>
-                        <option value="3">6</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
-                </div>
+                </section>
                 <br>
-                <div id="btn-domino">
-                    <button onclick="checkDominos()">Enviar</button>
-                </div>
+                <button onclick="checkNumber()">Enviar</button>
             </section>
 
         </div>
