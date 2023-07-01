@@ -44,6 +44,7 @@ button {
 #container h1 {
     font-size: 20px;
     padding: 0 2em;
+    margin-bottom: 0;
 }
 
 #cabecera {
