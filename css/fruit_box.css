@@ -44,7 +44,7 @@ button {
 
 #container {
     width: 50%;
-    height: 95vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -156,7 +156,6 @@ button {
 @media (max-width: 1024px) {
     #container {
         width: 90%;
-        height: max-content;
     }
 }
 
@@ -195,12 +194,6 @@ button {
         font-size: 1.1em;
         padding: 0;
     }
-    #container {
-        height: 85vh;
-    }
-    #fruit_box_img img {
-        height: 15em;
-    }
     #fruit_box_img img {
         height: 12em;
     }
@@ -214,7 +207,7 @@ button {
 
 @media (max-width: 360px) {
     #fruit_box_img img {
-        height: 12em;
+        height: 10em;
     }
     .list {
         padding: 0 1em;
