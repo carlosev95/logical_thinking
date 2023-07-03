@@ -44,7 +44,7 @@ button {
 
 #container {
     width: 50%;
-    height: max-content;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -193,6 +193,9 @@ button {
     h2 {
         font-size: 1.1em;
         padding: 0;
+    }
+    #container {
+        height: 100vh;
     }
     #fruit_box_img img {
         height: 12em;
