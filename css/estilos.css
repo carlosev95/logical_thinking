@@ -30,8 +30,7 @@ button {
 
 #container {
     width: 50%;
-    height: 95vh;
-    min-height: 95vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -79,6 +78,7 @@ button {
 
 @media (max-width: 1440px) {
     #container {
+        display: flex;
         flex-direction: column;
         width: 70%;
     }
@@ -86,7 +86,6 @@ button {
 
 @media (max-width: 1024px) {
     #container {
-        flex-direction: column;
         width: 90%;
     }
 }
