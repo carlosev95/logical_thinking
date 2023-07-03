@@ -14,14 +14,23 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
-h2 {
-    font-size: 30px;
+h1 {
+    font-size: 2em;
     text-align: center;
     margin-top: 0px;
 }
 
+h2 {
+    font-size: 1.2em;
+    padding: 0 3em;
+    margin-bottom: 0;
+}
 button {
     width: 6em;
     height: 3em;
@@ -35,16 +44,15 @@ button {
 
 #container {
     width: 50%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0;
-    text-align: left;
+    text-align: center;
     border: 1px solid #ddd;
     margin: 0 auto;
-}
-
-#container h1 {
-    font-size: 1.2em;
-    padding: 0 3em;
-    margin-bottom: 0;
+    background: white;
 }
 
 #cabecera {
@@ -62,20 +70,19 @@ button {
     text-align: center;
 }
 
-#post,
-#win,
-#lose {
-    background: white;
-    padding: 0.8em;
-    display: grid;
-    place-items: center;
-    text-align: center;
+#post, #win, #lose {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #fruit_box_img img {
     display: inline-block;
     width: auto;
-    height: 18em;
+    height: 16em;
+    margin-top: 1em;
 }
 
 #footer {
@@ -102,6 +109,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0.5em 0;
 }
 
 .box select {
@@ -141,7 +149,6 @@ button {
 
 @media (max-width: 1440px) {
     #container {
-        flex-direction: column;
         width: 70%;
     }
 }
@@ -149,20 +156,24 @@ button {
 @media (max-width: 1024px) {
     #container {
         width: 90%;
+        height: max-content;
     }
 }
 
 @media (max-width: 768px) {
-    #container {
-        width: 100%;
-    }
-    #container h1 {
+    h2 {
         padding: 0 2em;
     }
+    #container {
+        width: 100%;
+    } 
     #post {
         display: flex;
         text-align: center;
         flex-direction: column;
+    }
+    #fruit_box_img img {
+        height: 14em;
     }
     .list {
         padding: 0 5em;
@@ -180,12 +191,18 @@ button {
         margin:0.5em 0 0.5em 0;
         font-size: 1em;
     }
+    h2 {
+        font-size: 1.1em;
+        padding: 0;
+    }
+    #container {
+        height: 85vh;
+    }
     #fruit_box_img img {
         height: 15em;
     }
-    #container h1 {
-        font-size: 1.1em;
-        padding: 0;
+    #fruit_box_img img {
+        height: 12em;
     }
     .box {
         height: 140px;
