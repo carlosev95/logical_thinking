@@ -30,26 +30,32 @@ button {
 
 #container {
     width: 50%;
-    height: auto;
+    height: 95vh;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0;
     text-align: center;
     border: 1px solid #ddd;
     margin: 0 auto;
+    background: white;
 }
 
 #container h1 {
     font-size: 3em;
-    padding: 1em 2em 0 2em;
+    padding: 0 2em;
     text-align: center;
+    margin: 0.5em 1em 1em 1em;
 }
 
 #post{
-    background: white;
-    padding-bottom: 5em;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
 #footer {
