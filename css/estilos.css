@@ -46,7 +46,7 @@ button {
     font-size: 3em;
     padding: 0 2em;
     text-align: center;
-    margin: 0.5em 1em 1em 1em;
+    margin: 0.1em 1em 1em 1em;
 }
 
 #post{
@@ -105,7 +105,7 @@ button {
 @media (max-width: 480px) {
     #container h1 {
         font-size: 40px;
-        padding: 0.9em 1.9em 0 1.9em;
+        padding: 0 1.9em;
         text-align: center;
     }
     button {
