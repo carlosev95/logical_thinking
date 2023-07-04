@@ -16,7 +16,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    margin: 0;
 }
 
 h1 {
@@ -178,19 +177,13 @@ button {
 }
 
 @media (max-width: 480px) {
-    button {
-        width: 5.5em;
-        height: 2.5em;
-        border-radius: 0.6em;
-        font-size: 0.9em;
-    }
     h3 {
         margin:0.5em 0 0.5em 0;
         font-size: 1em;
     }
     h2 {
         font-size: 1.1em;
-        padding: 0;
+        padding: 0 1em;
     }
 
     #fruit_box_img img {
