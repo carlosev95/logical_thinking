@@ -6,7 +6,7 @@ En este proyecto veremos una serie de desafíos de pensamiento lógico, los cual
 
 <div align='center'>
     <img src='img/web.png'>
-    <p>Interfaz web del proyecto</p>
+    <p>Página principal del proyecto</p>
 </div>
 
 
