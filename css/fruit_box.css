@@ -16,7 +16,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     margin: 0;
 }
 
@@ -50,7 +49,6 @@ button {
     justify-content: space-between;
     padding: 0;
     text-align: center;
-    border: 1px solid #ddd;
     margin: 0 auto;
     background: white;
 }
@@ -71,7 +69,6 @@ button {
 }
 
 #post, #win, #lose {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,17 +191,15 @@ button {
         font-size: 1.1em;
         padding: 0;
     }
-    #container {
-        height: 100vh;
-    }
+
     #fruit_box_img img {
         height: 12em;
     }
     .box {
         height: 140px;
     }
-    .list {
-        padding: 0 1em;
+    .list{
+        padding: 0 1.5em;
     }
 }
 
