@@ -186,7 +186,6 @@ button {
         font-size: 1.1em;
         padding: 0 1em;
     }
-
     #fruit_box_img img {
         height: 12em;
     }
@@ -203,6 +202,6 @@ button {
         height: 10em;
     }
     .list {
-        padding: 0 1em;
+        padding: 0 1.5em;
     }
 }
