@@ -14,16 +14,20 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-h2 {
-    font-size: 30px;
+h1 {
+    font-size: 2em;
     text-align: center;
     margin-top: 0px;
 }
 
-h3 {
-    margin:2em 0 0 0;
+h2 {
+    font-size: 1.2em;
+    padding: 0 3em;
+    margin-bottom: 0;
 }
 
 button {
@@ -39,16 +43,14 @@ button {
 
 #container {
     width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0;
-    text-align: left;
-    border: 1px solid #ddd;
+    text-align: center;
     margin: 0 auto;
-}
-
-#container h1 {
-    font-size: 1.2em;
-    padding: 0 3em;
-    margin-bottom: 1em;
+    background: white;
 }
 
 #cabecera {
@@ -67,17 +69,18 @@ button {
 }
 
 #post, #win, #lose {
-    background: white;
-    padding: 0.8em;
-    display: grid;
-    place-items: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em 0;
 }
 
 #domino-container img {
     display: inline-block;
     width: auto;
-    height: 10em;
+    height: 9em;
+    padding: 1em 0;
 }
 
 #ocultar-domino {
@@ -151,9 +154,19 @@ button {
     border: none;
 }
 
+.button-container {
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    text-align: left;
+    padding: 0 6em;
+}
+
 @media (max-width: 1440px) {
     #container {
-        flex-direction: column;
         width: 70%;
     }
 }
@@ -165,12 +178,13 @@ button {
 }
 
 @media (max-width: 768px) {
+    h2 {
+        padding: 0 2em;
+    }
     #container {
         width: 100%;
     }
-    #container h1 {
-        padding: 0 2em;
-    }
+
     #post {
         display: flex;
         text-align: center;
@@ -182,25 +196,19 @@ button {
 }
 
 @media (max-width: 480px) {
-    button {
-        width: 5.5em;
-        height: 2.5em;
-        border-radius: 0.6em;
-        font-size: 0.9em;
-    }
     h3 {
-        margin:1.5em 0 0 0;
+        margin:0.5em 0 0.5em 0;
         font-size: 1em;
+    }
+    h2 {
+        font-size: 1.1em;
+        padding: 0;
     }
     #domino-container img {
         height: 7em;
     }
-    #container h1 {
-        font-size: 1.1em;
-        padding: 0;
-    }
-    .list {
-        padding: 0 1em;
+    .list{
+        padding: 0 1.5em;
     }
     .domino {
         width: 5em;
@@ -214,5 +222,8 @@ button {
 @media (max-width: 360px) {
     #domino-container img {
         height: 6em;
+    }
+    .list {
+        padding: 0 1em;
     }
 }
