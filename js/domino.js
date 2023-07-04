@@ -11,10 +11,10 @@ function checkNumber() {
 
     if (valorSelect1 === "4" && valorSelect2 === "6") {
         sectionPost.style.display = 'none'
-        sectionWin.style.display = 'block'
+        sectionWin.style.display = 'flex'
     } else {
         sectionPost.style.display = 'none'
-        sectionLose.style.display = 'block'
+        sectionLose.style.display = 'flex'
     }
 }
   
