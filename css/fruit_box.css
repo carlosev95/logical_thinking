@@ -73,6 +73,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0.7em 0;
 }
 
 #fruit_box_img img {
@@ -106,7 +107,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0.5em 0;
+    margin: 0.5em 0 0 0;
 }
 
 .box select {
