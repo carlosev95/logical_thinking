@@ -185,7 +185,6 @@ button {
     #container {
         width: 100%;
     }
-
     #post {
         display: flex;
         text-align: center;
@@ -225,6 +224,6 @@ button {
         height: 6em;
     }
     .list {
-        padding: 0 1em;
+        padding: 0 1.5em;
     }
 }
